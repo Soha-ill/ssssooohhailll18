@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Event Handling in HTML</title>
+    </head>
+    <body>
+       <label>State:</label>
+       <input type="text" id="State01" onChange="ChangeText()">
+       <label>Capital:</label>
+       <input type="text" id="Capital01" onChange="ChangeText()">
+       <p id="mystate"></p>
+       <p id="mycapital"></p>
+       <script>
+           function ChangeText()
+           {
+              var state = document.getElementById("State01").value;
+              var cap = document.getElementById("Capital01").value;
+              document.getElementById("mystate").innerHTML = "You Entered " + state;
+              document.getElementById("mycapital").innerHTML = "The Entered Capital is " + cap;
+           }
+        </script>
+    </body>
+</html>
